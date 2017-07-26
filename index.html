@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+
+<html>
+<!-- BEGIN HEAD -->
+
+<head>
+    <link href="../../forDeveloperOnly/assets/global/css/print-V2.css" rel="stylesheet" />
+    <style>
+    
+    	
+@page {
+	margin: 0.5cm;
+}
+
+.invoice-logo-space img {
+	width: 150px !important;
+	height: 100% !important;
+}
+
+.invoiceTable th,
+.invoiceTable td {
+	background-color: #ffffff;
+	box-sizing: border-box;
+}
+
+.invoice-table-body {
+	background: #fff;
+}
+
+.invoice-table-body p {
+	margin: 0px;
+	padding: 0px;
+}
+
+.print-container {
+	margin: 10px;
+	margin-bottom: 20px;
+}
+	table >tr > td{
+		font-weight: 300;
+			
+	}
+	
+.invoice-table-body ul {
+	list-style-type: none;
+}
+
+.invoice-table-body li {
+	text-decoration: none;
+	line-height: 2rem;
+}
+
+.invoice-table-body table,
+.invoice-table-body th,
+.invoice-table-body td {
+	border-collapse: collapse;
+}
+
+.invoiceTable th,
+.invoiceTable td {
+	padding: 10px;
+	text-align: left;
+}
+
+.invoiceTable tr>th {
+	font-weight: 400!important;
+}
+
+.div-margin {
+	margin: 2rem 0rem;
+}
+
+.payment-mode {
+	margin: 2rem 0rem;
+}
+
+.payment-mode li {
+	font-size: 1.7rem;
+	line-height: 2.5rem;
+}
+
+
+.text-right {
+	text-align: right!important;
+}
+
+.text-left {
+	text-align: left!important;
+}
+
+.priceRate {
+	text-align: right!important;
+}
+	.text-center{
+		text-align: center;
+	}
+	.pull-left{
+		float: left;
+	}
+	.pull-right{
+		float: right;
+	}
+	.clearfix{
+		clear: both;
+	}
+	
+.hotelData {
+	max-width: 300px;
+}
+
+.regInfo {
+	font-size: 10px !important;
+}
+
+.hotel_name {
+	font-size: 18px !important;
+}
+
+.invoiceFotterInfo {
+	padding-left: 5px;
+}
+
+.payableSum {
+	font-size: 15px !important;
+	padding: 6px 2px !important;
+	border-top: 1px solid #000 !important;
+	border-bottom: 0px solid #000 !important;
+}
+
+.invoice-table-body hr {
+	margin: 5px 0px !important;
+	border-top: 1px solid #b6b6b6;
+}
+
+.invoiceFont {
+	font-size: 13px;
+}
+
+.invoiceHead1 {
+	max-width: 110px;
+	min-width: 70px;
+	padding-right: 0;
+}
+
+.invoiceData1 {
+	max-width: 250px;
+	padding-left: 5px;
+}
+
+.invoiceData2 {
+	max-width: 186px;
+	padding-left: 5px;
+}
+
+.invoiceHead2 {
+	max-width: 100px;
+	min-width: 80px;
+	padding-right: 0;
+}
+
+.invoiceFootData {
+	max-width: 100px;
+}
+
+.logoInvoice img,
+.invoiceLogo img {
+	width: 100px;
+}
+
+.logoInvoice {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.logoInvoice .hotelName {
+	font-size: 22px;
+}
+
+.invoiceHead {
+	padding-bottom: 10px !important;
+}
+
+.invoiceHead div {
+	font-size: 15px;
+	border-bottom: 1px solid #000;
+	padding-bottom: 5px !important;
+}
+
+.weightedFont {
+	font-weight: 600 !important;
+}
+
+.totalBottom{
+	font-size: 18px !important;
+}
+
+.printTable td {
+	padding: 5px !important;
+	border-bottom-width: 1px;  
+	border-bottom-style: dashed !important; 
+	border-bottom-color: #ccc !important;
+	border-top-width: 0px;  
+	border-top-style: solid !important; 
+	border-top-color: gray !important;
+	font-size: 13px;
+	text-align: center;
+	font-weight: 300;
+}
+
+.printTable th {
+	padding: 5px 1px !important;
+	border-bottom: 1px solid #ccc;
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+	
+	font-size: 13px !important;
+}
+
+/* .invoiceTaxes {
+	position: absolute;
+	bottom: 12px;
+	width: 98%;
+	margin: 0 auto;
+} */
+
+.invoiceFooterCal {
+	font-size: 13px;
+}
+
+.noneBorderTop {
+	border: none !important;
+}
+
+.listType{
+	margin:5px auto;
+}
+
+.borderTableHead {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.timing{
+	margin:5px auto;
+}
+
+.timing .col{
+	width:33.33%;
+	float: left;
+	text-align: center;
+	margin: 5px auto;
+}
+
+.longDescription{
+	width:200px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+
+.borderHeightDiv{
+	height: 1px;
+	width:100%;
+	background-color:gray!important;
+	margin:5px auto;
+}
+
+   /* div {
+		position: relative;
+	}
+
+	@media print {
+		div.printFooter {
+			position: fixed;
+			bottom: 30px;
+			width: 100%;
+			page-break-after: auto;
+		}
+		.regInfo {
+			position: fixed;
+			bottom: 0px;
+			width: 100%;
+		}
+	} */
+
+
+	
+
+.printTable .paybleTotal {
+	padding: 5px 2px !important;
+	font-size: 15px;
+	border-bottom: 1px solid #ccc;
+}
+	.hr{
+		margin-top: 5px;
+		border-top-width: 1px !important; border-top-style: solid !important; border-top-color: gray !important;
+		width: 100%;
+		padding: 5px 0;
+	}
+	.spacing{
+		margin: 10px 0;
+	}
+	.hotel_address{
+	font-size:14px;
+	}
+
+
+.endlist{
+    margin-top: 10px;
+}
+    
+    
+    
+         div {
+            position: relative;
+        } 
+
+
+       
+       
+        .footerinvoice {
+        text-align: center;
+        border-top: 1px solid #b6b6b6;
+        padding-top:10px;
+        margin-top:50px;
+        padding-bottom:30px;
+        } 
+
+        div.printFooter {
+                width: 100%;
+                page-break-after: auto;
+            } 
+        
+            .printFooter {
+           /* page-break-before: auto !important; */
+            }
+    
+
+
+        @media print {
+            body{
+                position: relative;
+            }
+          div.printFooter {
+                width: 100%;
+                page-break-after: auto;
+            } 
+          
+            div.printFooter {
+                position: fixed;
+                bottom: 10px; 
+                width: 100%;
+                display: table-footer-group;   
+                 page-break-inside: avoid !important;
+                 page-break-before: auto !important; 
+            } 
+  
+            .footerinvoice {
+            page-break-after: always;
+            } 
+             .invoice-table-detail {
+            padding-bottom: 150px;
+            } 
+
+            .regInfo {
+                position: fixed;
+                bottom: 0px;
+                width: 100%;
+            }
+
+            }
+       
+    </style>
+</head>
+
+<body class="invoice-table-body">
+    <div class=" invoice-table-detail">
+        <div class="col-xs-12 text-center logoInvoice">
+            <img alt="" src="../../forDeveloperOnly/assets/global/img/hotel.png" />
+        </div>
+
+        <div class="col-xs-12 logoInvoice text-center">
+            <span class="weightedFont hotelName">Green View Hotel</span>
+        </div>
+
+      
+
+        <hr size="1">
+        <div class="row invoiceFont">
+            <div class="col-md-1 pull-left invoiceHead1">
+                <div>
+                    <span class="weightedFont invoiceFotterInfo text-left">Invoice No.</span>
+                </div>
+                <div>
+                    <span class="weightedFont invoiceFotterInfo text-left">Name</span>
+                </div>
+                <div>
+                    <span class="weightedFont invoiceFotterInfo text-left">Company</span>
+                </div>
+                <div>
+                    <span class="weightedFont invoiceFotterInfo">Pax</span>
+                </div>
+                <div>
+                    <span class="weightedFont invoiceFotterInfo">Nationality</span>
+                </div>
+                <div>
+                    <span class="weightedFont invoiceFotterInfo">Address</span>
+                </div>
+            </div>
+            <div class="col-md-5 pull-left invoiceData1">
+                <div>
+                    <span class="">: B1854122</span>
+                </div>
+                <div>
+                    <span class="text-right">: Chandervati chur singh katpitiya</span>
+                </div>
+                <div>
+                    <span class="text-right">: Rocky Royal</span>
+                </div>
+
+                <div>
+                    : Adult- 4/0
+                </div>
+                <div>
+                    : Indian
+                </div>
+                <div style="width:200px;max-width:200px;">
+                    : Royal calony near chandi sabarmati hospital chaturvadi genral store New delhi 110040
+                </div>
+            </div>
+            <div class="col-md-5 pull-right invoiceData2">
+                <div>
+                    <span class="">: #1101</span>
+                </div>
+
+                <div>
+                    <span class="text-right">: 21/12/2016</span>
+                </div>
+                <div>
+                    : 23/12/2016
+                </div>
+                <div>
+                    : 12:12 PM
+                </div>
+                <div>
+                    : 11:40 PM
+                </div>
+
+            </div>
+            <div class="col-md-1 pull-right invoiceHead2">
+                <div>
+                    <span class="weightedFont invoiceFotterInfo">Room No.</span>
+                </div>
+
+                <div>
+                    <span class="weightedFont invoiceFotterInfo">Arr. Date</span>
+                </div>
+                <div>
+                    <span class="weightedFont invoiceFotterInfo">Dep. Date</span>
+                </div>
+
+                <div>
+                    <span class="weightedFont invoiceFotterInfo">Arr. Time</span>
+                </div>
+                <div>
+                    <span class="weightedFont invoiceFotterInfo">Dep. Time</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="clearfix"></div>
+
+        <table class="table printTable" style="width:100% ">
+
+
+            <tbody>
+                <tr class="borderTableHead">
+                    <th class="weightedFont noneBorderTop text-left">Date</th>
+                    <th class="weightedFont noneBorderTop text-left">Room Rent</th>
+                    <th class="weightedFont noneBorderTop text-left">Food</th>
+                    <th class="weightedFont noneBorderTop text-left">Laundry</th>
+                    <th class="weightedFont noneBorderTop text-left">Paid Amenities</th>
+                    <th class="weightedFont noneBorderTop text-left">Misc</th>
+                    <th class="weightedFont noneBorderTop text-right">Total Amount</th>
+                </tr>
+
+
+
+                <tr>
+                    <td class="text-left">2017-08-03</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+
+                <tr>
+                    <td class="text-left">2017-08-04</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">2017-08-04</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">2017-08-04</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">2017-08-04</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">2017-08-04</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">2017-08-04</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">2017-08-04</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">2017-08-04</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">2017-08-04</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+
+                </tr>
+
+                <tr>
+                    <td class="text-left">2017-08-04</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+
+                <tr>
+                    <td class="text-left">2017-08-05</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">2017-08-06</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">2017-08-07</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">2017-08-08</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">2017-08-10</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">2017-08-11</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">2017-08-12</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">2017-08-13</td>
+
+
+
+
+                    <td class="text-left">₹1,181.08</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-left">₹0.00</td>
+
+                    <td class="text-right">₹1,181.08</td>
+
+                </tr>
+
+                <tr class="borderTableHead">
+                    <td class="weightedFont">Total Amount</td>
+                    <td class="weightedFont text-left">₹44,881.04</td>
+                    <td class="weightedFont text-left">₹0.00</td>
+                    <td class="weightedFont text-left">₹0.00</td>
+                    <td class="weightedFont text-left">₹0.00</td>
+                    <td class="weightedFont text-left">₹0.00</td>
+                    <td class="weightedFont text-right" colspan="5">₹48,403.98</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <div class="clearfix"></div>
+
+        <div class="row invoiceFont payDetailFooter" style="margin-top:15px">
+
+
+            <div class="pull-right invoiceFootData">
+                <div>
+                    <span class="">: Rs 21200</span>
+                </div>
+
+                <div>
+                    <span class="">: Rs 200</span>
+                </div>
+
+                <div>
+                    <span class="text-right">: 100</span>
+                </div>
+
+                <div>
+                    : Rs 150
+                </div>
+
+                <div>
+                    : Rs 40
+                </div>
+
+                <div>
+                    <span class="text-right">: Cash</span>
+                </div>
+            </div>
+
+            <div class="pull-right text-right">
+                <div>
+                    <span class="weightedFont invoiceFotterInfo">Sub Total</span>
+                </div>
+                <div>
+                    <span class="weightedFont invoiceFotterInfo">Total Discount</span>
+                </div>
+                <div>
+                    <span class="weightedFont invoiceFotterInfo">Luxury Tax@8%</span>
+                </div>
+                <div>
+                    <span class="weightedFont invoiceFotterInfo">VAT@7%</span>
+                </div>
+                <div>
+                    <span class="weightedFont invoiceFotterInfo">Service Tax@8%</span>
+                </div>
+                <div>
+                    <span class="weightedFont invoiceFotterInfo">Payment Mode</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="row netValue" style="margin-top:20px;">
+            <div class="text-right pull-right"><span class="weightedFont invoiceFotterInfo">Net Due: Rs 20910</span></div>
+            <div class="text-left pull-left"> Twenty Thousand Nine Hundred Ten Only</div>
+        </div>
+
+        <div class="clearfix"></div>
+        <hr size="1">
+    </div>
+    <div class="row printFooter" id="footerp">
+
+        <div class="col-md-12 termsCondition">
+            <p>
+                <span class="weightedFont">Terms And Conditions : </span> <span> when using the page-break-after:always for the tag it will create a page break after the last bit of the table, creating an entirely blank page at the end every time! To fix this just change it to page-break-after:auto. It will break correctly and not create an extra blank page.</span>
+            </p>
+        </div>
+        <div style="margin-top:20px;">
+            <div class="text-left pull-left">
+                <span class="weightedFont">(Signature of Guest)  </span>
+            </div>
+
+            <div class="text-right pull-right" style="padding-right:15px;">
+                <span class="weightedFont"> (F.O Signature) </span>
+            </div>
+        </div>
+        
+        
+        <!--hotel address  -->
+        <div class="col-md-12 footerinvoice">
+            <span class="text-center">
+            <span>E-23 , EAST OF KAILASH ,New Delhi <span>
+            <br>
+            <span class="weightedFont">Contact No. : </span> <span> 011-2323232323  </span>       
+            <span class="weightedFont">Email ID : </span> <span> aggaerwal@gmail.com </span>  
+            <span class="weightedFont">Website : </span> <span> aggaerwalhotel.com </span>  
+            <br>
+            <span class="weightedFont">CIN NO: </span> <span>U rererope </span>
+            <span class="weightedFont">PAN NO :</span> <span> sdsdghj </span> 
+            <span class="weightedFont"> GST NO : </span> <span> 57678njvfndf</span>
+            </span></span>
+           </span>
+        </div>
+
+
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!--./invoice-table-detail-->
+    <div class="col-sm-12 text-right printBtnContainer">
+        <button type="button" id="printpagebutton" onclick="printpage()" class="btn blue btn-outline">Print</button>
+    </div>
+
+    <script>
+        function printpage() {
+            //Get the print button and put it into a variable
+            var printButton = document.getElementById("printpagebutton");
+            //Set the print button visibility to 'hidden' 
+            printButton.style.visibility = 'hidden';
+            //Print the page content
+            window.print()
+            //Set the print button to 'visible' again 
+            //[Delete this line if you want it to stay hidden after printing]
+            printButton.style.visibility = 'visible';
+        }
+    </script>
+
+
+
+    <!-- ************* End ************* -->
+</body>
+
+</html>
+
+
+
